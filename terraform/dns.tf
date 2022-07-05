@@ -1,17 +1,19 @@
 resource "cloudflare_record" "apex" {
   zone_id = data.terraform_remote_state.cloudsetup.outputs.mdekort_zone_id
-  name    = "@"
+  name    = var.domain_name
   type    = "CNAME"
   ttl     = 1
   proxied = false
   value   = "apex-loadbalancer.netlify.com"
 }
 
-resource "cloudflare_record" "www" {
+resource "cloudflare_record" "aliasses" {
+  for_each = toset(var.domain_aliasses)
+
   zone_id = data.terraform_remote_state.cloudsetup.outputs.mdekort_zone_id
-  name    = "www"
+  name    = each.key
   type    = "CNAME"
   ttl     = 1
   proxied = false
-  value   = "apex-mdekort-nl.netlify.app"
+  value   = "${var.name}.netlify.app"
 }
