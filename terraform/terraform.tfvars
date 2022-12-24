@@ -1,4 +1,5 @@
-name            = "mdekort-nl"
-repo            = "melvyndekort/mdekort-nl"
-domain_name     = "mdekort.nl"
-domain_aliasses = ["www.mdekort.nl"]
+name        = "mdekort-nl"
+domain_name = "mdekort.nl"
+repo_owner  = "melvyndekort"
+repo_name   = "mdekort-nl"
+repo_branch = "main"
