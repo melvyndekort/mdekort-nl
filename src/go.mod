@@ -2,4 +2,4 @@ module github.com/melvyndekort/mdekort-nl
 
 go 1.18
 
-require github.com/melvyndekort/dracula-hugo-theme v0.0.0-20220705104221-7865ad7703ee // indirect
+require github.com/melvyndekort/dracula-hugo-theme v0.0.0-20231021153621-c4aa3c970019 // indirect
