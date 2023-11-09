@@ -6,8 +6,8 @@ relativeURLS = true
 
 [params]
   author = 'Melvyn de Kort'
-  description = 'My main website'
-  year = 2022
+  description = 'Main website'
+  year = 2023
   sourceCode = 'https://github.com/melvyndekort/mdekort-nl'
 
 [module]
